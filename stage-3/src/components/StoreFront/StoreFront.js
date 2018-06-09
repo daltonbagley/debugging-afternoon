@@ -31,9 +31,11 @@ class StoreFront extends Component {
 }
 
 function mapStateToProps(state) {
+    console.log(state)
+    const {products, loading} = state
     return {
-        products: state.products,
-        loading: state.loading,
+        products: products,
+        loading: loading,
     }
 }
 
